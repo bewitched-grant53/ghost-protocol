@@ -1,0 +1,32 @@
+# boot_check.service
+# Copy to /etc/systemd/system/
+# Then: systemctl enable boot_check.service
+#
+# Original: @JusticeRage
+# Updated:  @moscovium-mc
+
+[Unit]
+Description=Anti evil-maid attack check at startup
+Documentation=https://github.com/moscovium-mc/ghost-protocol
+After=getty@tty2.service
+
+[Service]
+Type=oneshot
+
+# /!\ UPDATE THIS PATH to wherever you placed boot_check.py /!\
+ExecStart=/usr/bin/python3 /root/ghost-protocol/boot_check.py
+
+StandardInput=tty
+StandardOutput=tty
+TTYPath=/dev/tty2
+TTYVHangup=yes
+
+# Run as root – the script requires it
+User=root
+
+# Harden the service a little
+ProtectSystem=false
+NoNewPrivileges=false
+
+[Install]
+WantedBy=default.target

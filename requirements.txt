@@ -1,0 +1,7 @@
+# ghost-protocol — Python dependencies
+# pip install -r requirements.txt
+
+# listurl.py
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+urllib3>=2.0.0
