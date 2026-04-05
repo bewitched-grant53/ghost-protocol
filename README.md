@@ -11,13 +11,13 @@ Distributed under the [GPL v3 License](https://www.gnu.org/licenses/gpl.html). C
 
 ## Table of Contents
 
-- [nojail.py](#nojailpy) — stealthy log sanitizer
-- [share.sh](#sharesh) — encrypted file transfer
-- [autojack.py](#autojackpy) — SSH session logger
-- [listurl.py](#listurlpy) — multi-threaded site mapper
-- [ersh.py](#ershpy) — encrypted reverse shell
-- [boot_check.py](#boot_checkpy) — evil-maid attack detector
-- [notify_hook.py](#notify_hookpy) — binary tripwire / alert system
+- [nojail.py](#nojailpy) - stealthy log sanitizer
+- [share.sh](#sharesh) - encrypted file transfer
+- [autojack.py](#autojackpy) - SSH session logger
+- [listurl.py](#listurlpy) - multi-threaded site mapper
+- [ersh.py](#ershpy) - encrypted reverse shell
+- [boot_check.py](#boot_checkpy) - evil-maid attack detector
+- [notify_hook.py](#notify_hookpy) - binary tripwire / alert system
 
 ---
 
@@ -167,7 +167,7 @@ Useful for attack surface mapping and bug-bounty recon.
 ## ersh.py
 
 Encrypted reverse shell in pure Python 3. No compiled dependencies.
-Mutual TLS 1.3 authentication — both ends verify each other.
+Mutual TLS 1.3 authentication - both ends verify each other.
 
 **Changes from v1:**
 - Replaced deprecated `ssl.wrap_socket` with `ssl.SSLContext` + TLS 1.3 minimum
@@ -248,7 +248,7 @@ an alert fires silently and the real binary is executed transparently.
 
 **Changes from v1:**
 - Multiple notification backends: **Signal**, **Slack**, **Discord**, generic **HTTP webhook**, and **syslog** fallback
-- Uses `os.execv` to replace the hook process with the real binary — no extra entry in `ps` output
+- Uses `os.execv` to replace the hook process with the real binary - no extra entry in `ps` output
 - Fixed `e.message` → `str(e)` in fork helpers
 - `shutil.which()` for binary discovery
 - Searches PATH directories, skipping `/local/` to avoid self-referential loops
